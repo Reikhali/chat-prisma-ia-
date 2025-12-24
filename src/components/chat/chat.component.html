@@ -1,0 +1,137 @@
+<div class="flex h-full w-full">
+  <!-- Sidebar (Collapsed/Minimal) -->
+  <aside class="hidden md:flex flex-col w-20 border-r border-[#292938] bg-[#0f0f16] items-center py-6 gap-8 z-20">
+    <!-- Brand Icon Small -->
+    <div class="size-10 flex items-center justify-center text-neon-purple">
+      <span class="material-symbols-outlined text-4xl" style="text-shadow: 0 0 10px #a855f7;">token</span>
+    </div>
+    <!-- Nav Items -->
+    <nav class="flex flex-col gap-6 w-full items-center">
+      <button class="size-12 rounded-xl flex items-center justify-center text-white bg-primary/20 hover:bg-primary/40 transition-all shadow-neon duration-300 group">
+        <span class="material-symbols-outlined group-hover:text-white text-primary" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+      </button>
+      <button class="size-12 rounded-xl flex items-center justify-center text-[#9f9eb7] hover:text-white hover:bg-[#292938] transition-colors">
+        <span class="material-symbols-outlined">history</span>
+      </button>
+      <button class="size-12 rounded-xl flex items-center justify-center text-[#9f9eb7] hover:text-white hover:bg-[#292938] transition-colors">
+        <span class="material-symbols-outlined">explore</span>
+      </button>
+      <button class="size-12 rounded-xl flex items-center justify-center text-[#9f9eb7] hover:text-white hover:bg-[#292938] transition-colors">
+        <span class="material-symbols-outlined">folder_open</span>
+      </button>
+    </nav>
+    <div class="mt-auto flex flex-col gap-6 items-center">
+      <button class="size-12 rounded-xl flex items-center justify-center text-[#9f9eb7] hover:text-white hover:bg-[#292938] transition-colors">
+        <span class="material-symbols-outlined">settings</span>
+      </button>
+      <div class="h-px w-8 bg-[#292938]"></div>
+      <div class="size-10 rounded-full bg-cover bg-center border-2 border-[#2f2ce2]" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBLfTdz0v0gMDa_rB8kU2ACQtK0j3CX7ODuSRbNJRihmXZEwq8wekO1kKbyxorT0TEhAjv6sd_BkK4w3OtNo4cEo36I9ymEISctF6dMRjTeVBDij0V7b3MTtCUyIKL_3A3J0IJPbxx4N3yRWiied3n4_-rbCG2-fsUw7WDH2MbanJbpKnBo6zdiQ3wRlX1Hgqx5BoTciRIS2sjvJ2mdHQeuPC-uzghFOFf-CzASbXd14FPVRjDsX63pu7EtPfexYnkR6OSY5uX5DNU');">
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 flex flex-col relative h-full w-full overflow-hidden">
+    <!-- Abstract Background Glows -->
+    <div class="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-primary/20 blur-[120px] rounded-full pointer-events-none z-0 mix-blend-screen"></div>
+    <div class="absolute bottom-[-20%] right-[-10%] w-[40%] h-[40%] bg-neon-purple/10 blur-[100px] rounded-full pointer-events-none z-0 mix-blend-screen"></div>
+
+    <!-- Header -->
+    <header class="flex items-center justify-between px-6 py-4 md:px-10 md:py-6 z-10 w-full">
+      <div class="md:hidden flex items-center gap-2 text-white">
+        <span class="material-symbols-outlined text-3xl text-neon-purple">token</span>
+      </div>
+      <div class="flex-1"></div> <!-- Spacer -->
+      <div class="flex items-center gap-4">
+        <a routerLink="/ai-drive" class="group relative flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#1c1c26] border border-[#2f2ce2]/50 hover:border-neon-purple hover:shadow-neon transition-all duration-300 overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-neon-purple/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <span class="material-symbols-outlined text-neon-purple text-xl">cloud_upload</span>
+          <span class="text-sm font-bold text-white tracking-wide">AI Drive</span>
+        </a>
+        <button class="md:hidden flex items-center justify-center text-white p-2">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Scrollable Content Area -->
+    <div class="flex-1 overflow-y-auto z-10 w-full flex flex-col items-center justify-center px-4 md:px-0 pb-10">
+      <div class="w-full max-w-[900px] flex flex-col items-center gap-8 md:gap-12 animate-fade-in-up">
+        <!-- Hero Text -->
+        <div class="text-center flex flex-col items-center gap-2">
+          <div class="inline-flex items-center justify-center p-3 mb-4 rounded-2xl bg-gradient-to-br from-[#2f2ce2]/20 to-[#a855f7]/20 border border-white/5 backdrop-blur-md shadow-neon">
+            <span class="material-symbols-outlined text-5xl text-white drop-shadow-[0_0_10px_rgba(168,85,247,0.8)]">token</span>
+          </div>
+          <h1 class="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-[#e0e0e0] to-[#a855f7] tracking-tight drop-shadow-sm pb-2">
+            PRISMA IA
+          </h1>
+          <p class="text-[#9f9eb7] text-lg md:text-xl font-medium tracking-wide max-w-lg">
+            Your sentient digital architect. <span class="text-neon-purple">Ready to build?</span>
+          </p>
+        </div>
+        <!-- Main Composer Input -->
+        <div class="w-full relative group">
+          <div class="absolute -inset-0.5 bg-gradient-to-r from-primary to-neon-purple rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+          <div class="relative bg-[#151520] rounded-2xl flex items-center p-2 pr-3 border border-white/10 shadow-2xl">
+            <div class="pl-4 pr-2 text-[#565570]">
+              <span class="material-symbols-outlined text-2xl animate-pulse">auto_awesome</span>
+            </div>
+            <input class="flex-1 bg-transparent border-none text-white placeholder-[#565570] focus:ring-0 text-lg py-4 px-2" placeholder="Ask PRISMA anything about your project..." type="text" />
+            <div class="flex items-center gap-2 pl-2 border-l border-white/10">
+              <button class="p-2 text-[#9f9eb7] hover:text-white hover:bg-white/5 rounded-lg transition-colors" title="Upload Image">
+                <span class="material-symbols-outlined text-[20px]">add_photo_alternate</span>
+              </button>
+              <button class="p-2 text-[#9f9eb7] hover:text-white hover:bg-white/5 rounded-lg transition-colors" title="Voice Input">
+                <span class="material-symbols-outlined text-[20px]">mic</span>
+              </button>
+              <button class="ml-2 h-10 px-6 bg-primary hover:bg-[#403de6] text-white rounded-xl font-bold text-sm shadow-lg shadow-primary/30 flex items-center justify-center transition-all active:scale-95">
+                <span class="material-symbols-outlined text-[20px] mr-1">send</span>
+                <span class="hidden sm:inline">Send</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Feature Grid (Starter Prompts) -->
+        <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+          <button class="group glass-panel p-5 rounded-2xl text-left hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div class="bg-[#1c1c26] w-10 h-10 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 border border-white/5 shadow-lg">
+              <span class="material-symbols-outlined text-primary group-hover:text-white transition-colors">travel_explore</span>
+            </div>
+            <h3 class="text-white font-bold mb-1 text-sm md:text-base">Deep Research</h3>
+            <p class="text-[#9f9eb7] text-xs leading-relaxed group-hover:text-white/80">Scan the web for real-time data analysis.</p>
+          </button>
+          <button class="group glass-panel p-5 rounded-2xl text-left hover:border-neon-purple/50 transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-neon-purple/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div class="bg-[#1c1c26] w-10 h-10 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 border border-white/5 shadow-lg">
+              <span class="material-symbols-outlined text-neon-purple group-hover:text-white transition-colors">photo_library</span>
+            </div>
+            <h3 class="text-white font-bold mb-1 text-sm md:text-base">Visual Studio</h3>
+            <p class="text-[#9f9eb7] text-xs leading-relaxed group-hover:text-white/80">Generate stunning neon assets.</p>
+          </button>
+          <button class="group glass-panel p-5 rounded-2xl text-left hover:border-blue-400/50 transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-400/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div class="bg-[#1c1c26] w-10 h-10 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 border border-white/5 shadow-lg">
+              <span class="material-symbols-outlined text-blue-400 group-hover:text-white transition-colors">terminal</span>
+            </div>
+            <h3 class="text-white font-bold mb-1 text-sm md:text-base">Code Architect</h3>
+            <p class="text-[#9f9eb7] text-xs leading-relaxed group-hover:text-white/80">Refactor and debug complex systems.</p>
+          </button>
+          <button class="group glass-panel p-5 rounded-2xl text-left hover:border-emerald-400/50 transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-emerald-400/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div class="bg-[#1c1c26] w-10 h-10 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 border border-white/5 shadow-lg">
+              <span class="material-symbols-outlined text-emerald-400 group-hover:text-white transition-colors">insert_chart</span>
+            </div>
+            <h3 class="text-white font-bold mb-1 text-sm md:text-base">Data Insights</h3>
+            <p class="text-[#9f9eb7] text-xs leading-relaxed group-hover:text-white/80">Visualize trends from uploaded CSVs.</p>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer / Disclaimers -->
+    <div class="w-full py-4 text-center z-10">
+      <p class="text-[#565570] text-xs">PRISMA IA can make mistakes. Verify important information.</p>
+    </div>
+  </main>
+</div>
