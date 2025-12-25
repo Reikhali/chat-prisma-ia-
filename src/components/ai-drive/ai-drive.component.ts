@@ -5,7 +5,7 @@ interface RecentFile {
   name: string;
   size: string;
   modified: string;
-  type: 'Document' | 'Data' | 'Image' | 'Audio' | 'Text' | 'Code';
+  type: 'Documento' | 'Dados' | 'Imagem' | 'Áudio' | 'Texto' | 'Código';
   icon: string;
   colorClasses: {
     bg: string;
@@ -25,10 +25,10 @@ interface RecentFile {
 export class AiDriveComponent {
   recentFiles = signal<RecentFile[]>([
     {
-      name: 'Project_Alpha_Specs.pdf',
+      name: 'Especificacoes_Projeto_Alpha.pdf',
       size: '2.4 MB',
-      modified: 'Today, 10:23 AM',
-      type: 'Document',
+      modified: 'Hoje, 10:23',
+      type: 'Documento',
       icon: 'picture_as_pdf',
       colorClasses: {
         bg: 'bg-red-500/10',
@@ -39,10 +39,10 @@ export class AiDriveComponent {
       }
     },
     {
-      name: 'dataset_v4_clean.csv',
+      name: 'dataset_v4_limpo.csv',
       size: '150 MB',
-      modified: 'Yesterday',
-      type: 'Data',
+      modified: 'Ontem',
+      type: 'Dados',
       icon: 'table_chart',
       colorClasses: {
         bg: 'bg-green-500/10',
@@ -53,10 +53,10 @@ export class AiDriveComponent {
       }
     },
     {
-      name: 'generated_neon_city.png',
+      name: 'cidade_neon_gerada.png',
       size: '4.2 MB',
-      modified: 'Oct 24, 2023',
-      type: 'Image',
+      modified: '24 de Out, 2023',
+      type: 'Imagem',
       icon: 'image',
       colorClasses: {
         bg: 'bg-purple-500/10',
@@ -67,10 +67,10 @@ export class AiDriveComponent {
       }
     },
     {
-      name: 'voice_command_log.mp3',
+      name: 'log_comando_de_voz.mp3',
       size: '2.8 MB',
-      modified: 'Oct 22, 2023',
-      type: 'Audio',
+      modified: '22 de Out, 2023',
+      type: 'Áudio',
       icon: 'mic',
       colorClasses: {
         bg: 'bg-yellow-500/10',
@@ -81,10 +81,10 @@ export class AiDriveComponent {
       }
     },
     {
-      name: 'meeting_transcript_final.txt',
+      name: 'transcricao_reuniao_final.txt',
       size: '12 KB',
-      modified: 'Oct 20, 2023',
-      type: 'Text',
+      modified: '20 de Out, 2023',
+      type: 'Texto',
       icon: 'description',
       colorClasses: {
         bg: 'bg-blue-500/10',
@@ -95,10 +95,10 @@ export class AiDriveComponent {
       }
     },
      {
-      name: 'model_weights.json',
+      name: 'pesos_do_modelo.json',
       size: '56 KB',
-      modified: 'Oct 18, 2023',
-      type: 'Code',
+      modified: '18 de Out, 2023',
+      type: 'Código',
       icon: 'code',
       colorClasses: {
         bg: 'bg-pink-500/10',
